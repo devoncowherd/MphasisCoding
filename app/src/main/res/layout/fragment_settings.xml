@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/mails"
+        android:text="Mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:padding="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/inboxButton"
+        android:text="Inbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/mails"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/settingsButton"/>
+    <Button
+        android:id="@+id/settingsButton"
+        android:text="Settings"
+        android:layout_width="0dp"
+        android:padding="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mails"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/inboxButton"/>
+
+    <TextView
+        android:id="@+id/autoSpamDeletion"
+        android:text="Auto Spam Deletion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingsButton"/>
+
+    <CheckBox
+        android:id="@+id/checkAutoSpamDeletion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingsButton"/>
+
+    <TextView
+        android:id="@+id/autoSync"
+        android:text="Auto Sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/autoSpamDeletion"/>
+    <CheckBox
+        android:id="@+id/checkAutoSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkAutoSpamDeletion"/>
+
+    <TextView
+        android:id="@+id/autoCacheClear"
+        android:text="Auto Cache Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/autoSync"/>
+    <CheckBox
+        android:id="@+id/checkAutoCacheClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkAutoSync"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MphasisQ1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="autoSpamDeletion">False</string>
+    <string name="autoSync">False</string>
+    <string name="autoCacheClear">False</string>
+
+</resources>
